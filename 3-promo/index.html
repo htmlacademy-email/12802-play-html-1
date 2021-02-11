@@ -19,6 +19,11 @@
       }
 
       @media only screen and (max-width: 600px) {
+        .wrapper {
+          max-width: 600px !important;
+          width: 100% !important;
+        }
+
         .header {
           padding: 12px !important;
         }
@@ -34,6 +39,36 @@
             padding-top: 12px !important;
             padding-bottom: 12px !important;
           }
+
+        .stock-course {
+          Margin-left: auto;
+          Margin-right: auto;
+          float: none !important;
+          width: 100% !important;
+          max-width: 320px !important;
+        }
+
+        .stock-courses__gutter {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+
+        .popular-course {
+          Margin-bottom: 48px;
+          Margin-left: auto;
+          Margin-right: auto;
+          float: none !important;
+          width: 152px !important;
+        }
+
+        .popular-courses {
+          padding-top: 48px !important;
+          padding-bottom: 0 !important;
+        }
+
+        .all-courses-link-container {
+          padding-bottom: 56px !important;
+        }
       }
     </style>
   </head>
@@ -46,7 +81,7 @@
         </v:background>
       <![endif]-->
 
-      <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 600px;" role="presentation">
+      <table class="wrapper" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 600px;" role="presentation">
         <tr>
           <td style="padding-left: 16px; padding-right: 16px;">
             <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
@@ -190,14 +225,14 @@
                         </table>
 
                         <!-- Курсы, участвующие в акции -->
-                        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <table class="stock-courses" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
-                            <td align="center" style="padding-bottom: 24px; text-align: center;">
+                            <td class="stock-courses__gutter" align="center" style="padding-bottom: 24px; text-align: center;">
                               <h2 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 24px; line-height: 28px; font-weight: bold; color: #141414;">Курсы, участвующие в акции</h2>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="stock-courses__gutter">
                               <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                                 <tr>
                                   <td>
@@ -207,19 +242,19 @@
                                         <td>
                                     <![endif]-->
                                           <!-- Html+css начальный -->
-                                          <table align="left" width="50%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; text-align: center;">
+                                          <table class="stock-course" align="left" width="50%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; text-align: center;">
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 16px;">
                                                 <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/course1.png" alt="Курс HTML+CSS начальный" border="0" width="122" height="100" />
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 18px;">
                                                 <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; line-height: 19px; font-weight: bold; color: #000000;">Html+css начальный</h3>
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 16px;">
                                                 <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; line-height: 19px;">
                                                   <tr>
                                                     <td>
@@ -233,7 +268,7 @@
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 48px;">
                                                 <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                                   <tr>
                                                     <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #0b379b; border-radius: 5px;">
@@ -253,19 +288,19 @@
                                         <td>
                                     <![endif]-->
                                           <!-- Html+css продвинутый -->
-                                          <table align="right" width="50%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right; text-align: center;">
+                                          <table class="stock-course" align="right" width="50%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right; text-align: center;">
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 16px;">
                                                 <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/course2.png" alt="Курс HTML+CSS продвинутый" border="0" width="100" height="100" />
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 18px;">
                                                 <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; line-height: 19px; font-weight: bold; color: #000000;">Html+css продвинутый</h3>
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 16px;">
                                                 <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; line-height: 19px;">
                                                   <tr>
                                                     <td>
@@ -279,7 +314,7 @@
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 48px;">
                                                 <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                                   <tr>
                                                     <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #0b379b; border-radius: 5px;">
@@ -309,19 +344,19 @@
                                         <td>
                                     <![endif]-->
                                           <!-- Photoshop для верстальщика -->
-                                          <table align="left" width="50%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; text-align: center;">
+                                          <table class="stock-course" align="left" width="50%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; text-align: center;">
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 16px;">
                                                 <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/course3.png" alt="Курс Photoshop для верстальщика" border="0" width="83" height="100" />
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 18px;">
                                                 <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; line-height: 19px; font-weight: bold; color: #000000;">Photoshop для верстальщика</h3>
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 16px;">
                                                 <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; line-height: 19px;">
                                                   <tr>
                                                     <td>
@@ -335,7 +370,7 @@
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 48px;">
                                                 <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                                   <tr>
                                                     <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #0b379b; border-radius: 5px;">
@@ -355,19 +390,19 @@
                                         <td>
                                     <![endif]-->
                                           <!-- JS начальный -->
-                                          <table align="right" width="50%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right; text-align: center;">
+                                          <table class="stock-course" align="right" width="50%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right; text-align: center;">
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 16px;">
                                                 <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/course4.png" alt="Курс JavaScript начальный" border="0" width="74" height="100" />
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 18px;">
                                                 <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; line-height: 19px; font-weight: bold; color: #000000;">JS начальный</h3>
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 16px;">
                                                 <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; line-height: 19px;">
                                                   <tr>
                                                     <td>
@@ -381,7 +416,7 @@
                                               </td>
                                             </tr>
                                             <tr>
-                                              <td>
+                                              <td style="padding-bottom: 48px;">
                                                 <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                                   <tr>
                                                     <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #0b379b; border-radius: 5px;">
@@ -411,6 +446,14 @@
                     </tr>
                   </table>
 
+                  <!-- разделитель -->
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
+                    <tr>
+                      <td style="height: 24px; line-height: 24px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+                  </table>
 
                   <!-- Отзыв о курсе -->
                   <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
@@ -498,38 +541,47 @@
                     </tr>
                   </table>
 
-                  <!-- Популярные курсы -->
+                  <!-- разделитель -->
                   <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
+                    <tr>
+                      <td style="height: 24px; line-height: 24px;">
+                        &nbsp;
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- Популярные курсы -->
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%; text-align: center;" role="presentation">
                     <tr>
                       <td style="overflow: hidden; border-radius: 15px; background-color: #ffffff;">
                         <!-- Популярные курсы -->
                         <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
-                            <td style="padding-bottom: 24px; text-align: center;">
+                            <td style="padding-top: 32px; padding-left: 16px; padding-right: 16px; text-align: center;">
                               <h2 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 24px; line-height: 28px; font-weight: bold; color: #141414;">Популярные курсы</h2>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="popular-courses" style="padding-top: 24px; padding-bottom: 16px;">
                               <!--[if mso]>
                               <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                                 <tr>
                                   <td width="33%" style="width: 33%">
                               <![endif]-->
                                     <!-- Специалист по кибербезопасности -->
-                                    <table align="left" width="33%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; width: 33%;">
+                                    <table class="popular-course" align="left" width="33%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; width: 33%;">
                                       <tr>
-                                        <td>
+                                        <td style="padding-bottom: 16px;">
                                           <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/shield1.png" alt="" border="0" width="48" height="56" />
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
+                                        <td style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px;  height: 45px; vertical-align: top;">
                                           <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 13px; line-height: 15px; font-weight: bold; color: #141414;">Специалист по кибербезопасности</h3>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td align="center" style="text-align: center;">
+                                        <td align="center" style="padding-left: 16px; padding-right: 16px;  text-align: center;">
                                           <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                             <tbody><tr>
                                               <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #FF4B33; border-radius: 5px;">
@@ -549,19 +601,20 @@
                                   <td width="33%" style="width: 33%">
                               <![endif]-->
                                     <!-- Профессия Data Scientist: анализ данных -->
-                                    <table align="left" width="33%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; width: 33%;">
+                                    <table class="popular-course" align="left" width="33%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; width: 33%;">
                                       <tr>
-                                        <td>
+                                        <td style="padding-bottom: 16px;">
                                           <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/shield2.png" alt="" border="0" width="48" height="56" />
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
-                                          <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 13px; line-height: 15px; font-weight: bold; color: #141414;">Data Scientist: анализ данных</h3>
+                                        <td style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px;  height: 45px; vertical-align: top;">
+                                          <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 13px; line-height: 15px; font-weight: bold; color: #141414;">Профессия
+                                            Data Scientist: анализ данных</h3>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td align="center" style="text-align: center;">
+                                        <td align="center" style="padding-left: 16px; padding-right: 16px;  text-align: center;">
                                           <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                             <tbody><tr>
                                               <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #FF4B33; border-radius: 5px;">
@@ -581,19 +634,19 @@
                                   <td width="33%" style="width: 33%">
                               <![endif]-->
                                     <!-- Профессия Разработчик игр на Unity -->
-                                    <table align="right" width="33%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right; width: 33%;">
+                                    <table class="popular-course" align="right" width="33%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right; width: 33%;">
                                       <tr>
-                                        <td>
+                                        <td style="padding-bottom: 16px;">
                                           <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/shield3.png" alt="" border="0" width="48" height="56" />
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td>
+                                        <td style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px;  height: 45px; vertical-align: top;">
                                           <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 13px; line-height: 15px; font-weight: bold; color: #141414;">Разработчик игр на Unity с нуля до Middle</h3>
                                         </td>
                                       </tr>
                                       <tr>
-                                        <td align="center" style="text-align: center;">
+                                        <td align="center" style="padding-left: 16px; padding-right: 16px; text-align: center;">
                                           <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                             <tbody><tr>
                                               <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #FF4B33; border-radius: 5px;">
@@ -617,11 +670,11 @@
                           </tr>
                           <tr>
                             <td align="center">
-                              <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/people.png" alt="Обучающиеся люди" border="0" width="300" height="300" />
+                              <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/people.png" alt="Обучающиеся люди" border="0" width="300" height="300" style="display: block; max-width: 300px; width: 100%; height: auto;" />
                             </td>
                           </tr>
                           <tr>
-                            <td align="center">
+                            <td class="all-courses-link-container" align="center" style="padding-bottom: 48px;">
                               <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                 <tbody><tr>
                                   <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #0B379B; border-radius: 5px;">
@@ -697,6 +750,15 @@
                             </td>
                           </tr>
                         </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- разделитель -->
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
+                    <tr>
+                      <td style="height: 24px; line-height: 24px;">
+                        &nbsp;
                       </td>
                     </tr>
                   </table>
