@@ -18,12 +18,42 @@
         mso-line-height-rule: exactly;
       }
 
+      .presenter br {
+        display: none;
+      }
+
       @media only screen and (max-width: 600px) {
+        .wrapper {
+          max-width: 600px !important;
+          width: 100% !important;
+        }
+
         .logo-container {
           padding-top: 26px !important;
         }
+
+        .presenter__info {
+          padding-bottom: 16px !important;
+        }
+
+        .presenter__invite-link {
+          padding-bottom: 0 !important;
+        }
+
+        .presenter br {
+          display: block;
+        }
       }
     </style>
+    <!--[if mso]>
+      <style>
+        .wrapper {
+          Margin-left: auto;
+          Margin-right: auto;
+          width: 600px !important;
+        }
+      </style>
+    <![endif]-->
   </head>
   <body style="Margin: 0; padding: 0; width: 100%; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
 
@@ -35,7 +65,7 @@
         </v:background>
       <![endif]-->
 
-      <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 600px;" role="presentation">
+      <table class="wrapper" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%; max-width: 600px;" role="presentation">
         <tr>
           <td style="padding-left: 16px; padding-right: 16px;">
             <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
@@ -209,9 +239,9 @@
                   </table>
 
                   <!-- Ведущий вебинара -->
-                  <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="text-align: center;">
+                  <table class="presenter" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="text-align: center;">
                     <tr>
-                      <td style="padding-top: 40px; padding-bottom: 24px;">
+                      <td style="padding-top: 40px; padding-bottom: 24px; padding-left: 16px; padding-right: 16px;">
                         <h2 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 24px; line-height: 28px; font-weight: bold; color: #141414;">Ведущий вебинара</h2>
                       </td>
                     </tr>
@@ -221,20 +251,20 @@
                       </td>
                     </tr>
                     <tr>
-                      <td style="padding-bottom: 24px; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #141414;">
+                      <td class="presenter__info" style="padding-bottom: 24px; padding-left: 16px; padding-right: 16px; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #141414;">
                         <b style="font-weight: bold;">Иван Васильев</b>
-                        <p style="Margin: 0;">Frontend-разработчик компании Cats Development</p>
+                        <p style="Margin: 0;">Frontend-разработчик <br>компании Cats Development</p>
                       </td>
                     </tr>
                     <tr>
-                      <td style="padding-bottom: 16px;">
+                      <td class="presenter__invite-link" style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px;">
                         <!-- кнопка-ссылка -->
                         <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                           <tr>
                             <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #ff4b33; border-radius: 5px;">
                               <a href="https://htmlacademy.ru/vebinar/about" title="Зарегистрироваться на вебинар «Тренды Frontend-разработки 2020»" target="_blank" style="display: inline-block; padding-top: 8px; padding-bottom: 8px; padding-left: 16px; padding-right: 16px; border: 1px solid #ff4b33; font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #ff4b33; border-radius: 5px; text-decoration: none;">
                                 <span style="text-decoration: none; color: #ffffff;">
-                                  Зарегистрироваться на вебинар
+                                  Зарегистрироваться <br> на вебинар
                                 </span>
                               </a>
                             </td>
