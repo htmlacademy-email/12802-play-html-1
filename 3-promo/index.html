@@ -17,6 +17,24 @@
         -ms-text-size-adjust: 100%;
         mso-line-height-rule: exactly;
       }
+
+      @media only screen and (max-width: 600px) {
+        .header {
+          padding: 12px !important;
+        }
+
+          .header__links,
+          .header__logo {
+            Margin-left: auto !important;
+            Margin-right: auto !important;
+            float: none !important;
+          }
+
+          .header__gutter {
+            padding-top: 12px !important;
+            padding-bottom: 12px !important;
+          }
+      }
     </style>
   </head>
   <body style="Margin: 0; padding: 0; width: 100%">
@@ -37,37 +55,37 @@
                   <!-- хедер -->
                   <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                     <tr>
-                      <td valign="top">
+                      <td class="header" valign="top" style="padding-top: 52px; padding-bottom: 36px;">
                         <!--[if mso]>
                         <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                           <tr>
                             <td>
                         <![endif]-->
                               <!-- ссылки -->
-                              <table align="right" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right;">
+                              <table class="header__links" align="right" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right;">
                                 <tr>
-                                  <td>
+                                  <td class="header__gutter" style="padding-right: 10px;">
                                     <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 11px; line-height: 13px; color: #000000;">Мы в соцсетях:</p>
                                   </td>
-                                  <td>
+                                  <td class="header__gutter">
                                     <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                                       <tr>
-                                        <td>
+                                        <td style="padding-right: 8px;">
                                           <a href="https://htmlacademy.ru" target="_blank" title="Мы в Facebook">
                                             <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/facebook.png" alt="Логотип Facebook" width="24" height="24" border="0" />
                                           </a>
                                         </td>
-                                        <td>
+                                        <td style="padding-right: 8px;">
                                           <a href="https://htmlacademy.ru" target="_blank" title="Мы в Instagram">
                                             <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/instagram.png" alt="Логотип Instagram" width="24" height="24" border="0" />
                                           </a>
                                         </td>
-                                        <td>
+                                        <td style="padding-right: 8px;">
                                           <a href="https://htmlacademy.ru" target="_blank" title="Мы в YouTube">
                                             <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/youtube.png" alt="Логотип YouTube" width="24" height="24" border="0" />
                                           </a>
                                         </td>
-                                        <td>
+                                        <td style="padding-right: 8px;">
                                           <a href="https://htmlacademy.ru" target="_blank" title="Мы в Telegram">
                                             <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/telegram.png" alt="Логотип Telegram" width="24" height="24" border="0" />
                                           </a>
@@ -87,9 +105,9 @@
                             <td>
                         <![endif]-->
                               <!-- логотип -->
-                              <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left;">
+                              <table class="header__logo" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left;">
                                 <tr>
-                                  <td>
+                                  <td class="header__gutter">
                                     <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/logo.png" alt="Логотип PlayHTML" border="0" width="140" height="24" />
                                   </td>
                                 </tr>
