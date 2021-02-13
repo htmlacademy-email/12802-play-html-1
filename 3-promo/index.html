@@ -69,8 +69,28 @@
         .all-courses-link-container {
           padding-bottom: 56px !important;
         }
+
+        .footer-column {
+          float: none;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+          .footer-column__gutter {
+            padding-top: 24px !important;
+            padding-bottom: 24px !important;
+          }
       }
     </style>
+    <!--[if mso]>
+      <style>
+        .wrapper {
+          Margin-left: auto;
+          Margin-right: auto;
+          width: 600px !important;
+        }
+      </style>
+    <![endif]-->
   </head>
   <body style="Margin: 0; padding: 0; width: 100%">
     <!-- контейнер для задания фона -->
@@ -81,7 +101,7 @@
         </v:background>
       <![endif]-->
 
-      <table class="wrapper" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 600px;" role="presentation">
+      <table class="wrapper" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%; max-width: 600px;" role="presentation">
         <tr>
           <td style="padding-left: 16px; padding-right: 16px;">
             <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
@@ -769,16 +789,16 @@
                         <!-- футер с ссылками-->
                         <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
-                            <td style="padding-left: 8px; padding-right: 8px;">
+                            <td>
                               <!--[if mso]>
                               <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                                   <tr>
                                     <td width="284" style="width: 284px">
                               <![endif]-->
                               <!-- Контакты -->
-                              <table align="left" width="276" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 276px" role="presentation">
+                              <table class="footer-column" align="left" width="284" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 50%" role="presentation">
                                 <tr>
-                                  <td style="padding-left: 8px; padding-right: 8px; padding-bottom: 32px;">
+                                  <td class="footer-column__gutter" style="padding-left: 16px; padding-right: 16px; padding-top: 32px; padding-bottom: 32px;">
                                     <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                                       <tr>
                                         <td style="padding-bottom: 16px">
@@ -847,9 +867,9 @@
                                   <td width="284" style="width: 284px">
                               <![endif]-->
                               <!-- Полезные ссылки -->
-                              <table align="right" width="276" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 276px" role="presentation">
+                              <table class="footer-column" align="right" width="284" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 50%" role="presentation">
                                 <tr>
-                                  <td style="padding-left: 8px; padding-right: 8px; padding-bottom: 32px;">
+                                  <td class="footer-column__gutter" style="padding-left: 16px; padding-right: 16px; padding-top: 32px; padding-bottom: 32px;">
                                     <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                                       <tr>
                                         <td style="padding-bottom: 16px">
@@ -887,16 +907,12 @@
                         </table>
 
                         <!-- уведомление о причинах получения письма -->
-                        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                           <tr>
-                            <td style="padding-top: 56px; padding-bottom: 16px;">
-                              <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 11px; font-weight: normal; line-height: 13px; color: #828282;">
+                            <td style="padding-top: 24px; padding-left: 16px; padding-right: 16px; padding-bottom: 32px;">
+                              <p style="Margin: 0 0 16px; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 11px; font-weight: normal; line-height: 13px; color: #828282;">
                                 Вы получили это письмо, так как являетесь пользователем портала HTMLPlay. Рассылка производится в соответствии с пользовательским соглашением. Если вы не хотите получать рассылку, вы можете <a href="https://htmlacademy.ru" title="Отписаться от рассылок" traget="_blank" style="text-decoration: underline; color: #828282;">отписаться</a> или <a href="https://htmlacademy.ru" title="Настройка параметров" traget="_blank" style="text-decoration: underline; color: #828282;">настроить параметры</a>.
                               </p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding-bottom: 32px;">
                               <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 11px; font-weight: normal; line-height: 13px; color: #828282;">Если письмо отображается некорректно или вы хотите им поделиться, <a href="https://htmlacademy.ru" title="Просмотр веб-версии письма" traget="_blank" style="text-decoration: underline; color: #828282;">жмите сюда</a>.</p>
                             </td>
                           </tr>
