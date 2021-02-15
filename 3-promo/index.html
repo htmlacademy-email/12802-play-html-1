@@ -41,6 +41,11 @@
             padding-bottom: 12px !important;
           }
 
+        .banner__cell {
+          float: none !important;
+          width: 100%  !important;
+        }
+
         .stock-course {
           Margin-left: auto;
           Margin-right: auto;
@@ -52,6 +57,20 @@
         .stock-courses__gutter {
           padding-left: 16px !important;
           padding-right: 16px !important;
+        }
+
+        .testimonial__cell {
+          float: none !important;
+          width: 100% !important;
+        }
+
+        .testimonial__author-container {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .testimonial__top {
+          padding-bottom: 24px !important;
         }
 
         .popular-course {
@@ -69,6 +88,14 @@
 
         .all-courses-link-container {
           padding-bottom: 56px !important;
+        }
+
+        .benefits__title-container {
+          padding-bottom: 40px !important;
+        }
+
+        .benefits__list-container {
+          padding-bottom: 32px !important;
         }
 
         .footer-column {
@@ -181,7 +208,7 @@
                     <tr>
                       <td style="overflow: hidden; border-radius: 15px; background-color: #ffffff;" bgcolor="#ffffff">
                         <!-- Баннер с акцией -->
-                        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <table class="banner" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
                             <td style="padding-bottom: 32px;">
                               <!--[if mso]>
@@ -190,7 +217,7 @@
                                   <td>
                               <![endif]-->
                                     <!-- текст -->
-                                    <table align="left" width="284" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 284px; float: left;">
+                                    <table class="banner__cell" align="left" width="284" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 50%; float: left;">
                                       <tr>
                                         <td style="background-color: #ff4b33; color: #ffffff; padding-top: 32px; padding-bottom: 32px; padding-left: 32px; padding-right: 24px;" bgcolor="#ff4b33">
                                           <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
@@ -207,9 +234,9 @@
                                             </tr>
                                             <tr>
                                               <td>
-                                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
+                                                <table width="auto" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                                   <tr>
-                                                    <td style="font-family: Tahoma, 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 56px; line-height: 68px; font-weight: bold;">
+                                                    <td style="padding-right: 11px; font-family: Tahoma, 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 56px; line-height: 68px; font-weight: bold;">
                                                       20%
                                                     </td>
                                                     <td style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px;">
@@ -228,10 +255,10 @@
                                   <td>
                               <![endif]-->
                                     <!-- изображение -->
-                                    <table align="right" width="284" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 284px; float: right;">
+                                    <table class="banner__cell" align="right" width="284" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 50%; float: right;">
                                       <tr>
-                                        <td>
-                                          <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/party.png" alt="Радостные люди" border="0" width="284" height="272" />
+                                        <td style="text-align: center;" align="center">
+                                          <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/party.png" alt="Радостные люди" border="0" width="284" height="272" style="display: inline-block; vertical-align: top; width: 100%; height: auto; max-width: 284px;" />
                                         </td>
                                       </tr>
                                     </table>
@@ -477,9 +504,9 @@
                   </table>
 
                   <!-- Отзыв о курсе -->
-                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
+                  <table class="testimonial" width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                     <tr>
-                      <td style="overflow: hidden; border-radius: 15px; background-color: #ffffff;">
+                      <td style="padding: 32px 16px; overflow: hidden; border-radius: 15px; background-color: #ffffff;">
                         <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
                             <td align="center" style="padding-bottom: 24px; text-align: center;">
@@ -490,25 +517,25 @@
                             <td>
                               <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                                 <tr>
-                                  <td style="padding-bottom: 40px;">
+                                  <td class="testimonial__top" style="padding-bottom: 40px;">
                                     <!--[if mso]>
                                     <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                                       <tr>
                                         <td>
                                     <![endif]-->
                                           <!-- информации о человеке -->
-                                          <table align="left" width="152" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; width: 152px;">
+                                          <table class="testimonial__cell" align="left" width="144" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left; width: 27%;">
                                             <tr>
-                                              <td style="padding-left: 16px; padding-right: 16px;">
-                                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
+                                              <td class="testimonial__author-container" style="padding-bottom: 28px; padding-right: 24px;" align="center">
+                                                <table width="120" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: separate;" role="presentation">
                                                   <tr>
-                                                    <td style="padding-bottom: 8px;">
-                                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/person.jpg" alt="Фото Анны" border="0" width="120" height="120" />
+                                                    <td style="padding: 6px; border: 1px solid #13d6c3; border-radius: 50%;">
+                                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/person.jpg" alt="Фото Анны" border="0" width="120" height="120" style="display: block; border-radius: 50%; width: 100%; max-width: 120px; height: auto;" />
                                                     </td>
                                                   </tr>
                                                   <tr>
-                                                    <td>
-                                                      <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 20px; color: #141414;">Анна</p>
+                                                    <td style="padding-top: 8px;">
+                                                      <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 20px; color: #141414; text-align: center;">Анна</p>
                                                     </td>
                                                   </tr>
                                                 </table>
@@ -520,7 +547,7 @@
                                         <td>
                                     <![endif]-->
                                           <!-- текст -->
-                                          <table align="right" width="392" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right; width: 392px;">
+                                          <table class="testimonial__cell" align="right" width="392" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right; width: 73%;">
                                             <tr>
                                               <td style="padding-bottom: 17px;">
                                                 <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; line-height: 18px; color: #13D6C3;">Очень понравился курс!</p>
@@ -542,16 +569,18 @@
                                 <tr>
                                   <td align="center" style="text-align: center;">
                                     <table border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
-                                      <tbody><tr>
-                                        <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #FF4B33; border-radius: 5px;">
-                                          <a href="https://htmlacademy.ru/intensive/htmlcss" title="Записаться на курс" target="_blank" style="display: inline-block; padding-top: 8px; padding-bottom: 8px; padding-left: 16px; padding-right: 16px; border: 1px solid #FF4B33; font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #FF4B33; border-radius: 5px; text-decoration: none;">
-                                            <span style="text-decoration: none; color: #ffffff;">
-                                              Записаться на курс
-                                            </span>
-                                          </a>
-                                        </td>
-                                      </tr>
-                                    </tbody></table>
+                                      <tbody>
+                                        <tr>
+                                          <td style="font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #FF4B33; border-radius: 5px;">
+                                            <a href="https://htmlacademy.ru/intensive/htmlcss" title="Записаться на курс" target="_blank" style="display: inline-block; padding-top: 8px; padding-bottom: 8px; padding-left: 16px; padding-right: 16px; border: 1px solid #FF4B33; font-family: 'Trebushet MS', sans-serif;  -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #FF4B33; border-radius: 5px; text-decoration: none;">
+                                              <span style="text-decoration: none; color: #ffffff;">
+                                                Записаться на курс
+                                              </span>
+                                            </a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
                                   </td>
                                 </tr>
                               </table>
@@ -571,12 +600,11 @@
                     </tr>
                   </table>
 
-                  <!-- Популярные курсы -->
-                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%; text-align: center;" role="presentation">
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                     <tr>
                       <td style="overflow: hidden; border-radius: 15px; background-color: #ffffff;">
                         <!-- Популярные курсы -->
-                        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="text-align: center;">
                           <tr>
                             <td style="padding-top: 32px; padding-left: 16px; padding-right: 16px; text-align: center;">
                               <h2 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 24px; line-height: 28px; font-weight: bold; color: #141414;">Популярные курсы</h2>
@@ -712,24 +740,24 @@
                         </table>
 
                         <!-- Преимущества обучения у нас -->
-                        <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                        <table class="benefits" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                           <tr>
-                            <td style="text-align: center;">
+                            <td class="benefits__title-container" style="padding-bottom: 24px; padding-left: 16px; padding-right: 16px; text-align: center;">
                               <h2 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 24px; line-height: 28px; font-weight: bold; color: #141414;">Преимущества обучения у нас</h2>
                             </td>
                           </tr>
                           <tr>
-                            <td>
+                            <td class="benefits__list-container" style="padding-bottom: 48px;">
                               <!-- Список преимуществ -->
                               <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 20px; color: #141414;"">
                                 <tr>
                                   <td style="padding-bottom: 24px;">
                                     <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                                       <tr>
-                                        <td style="padding-left: 16px; padding-right: 16px;">
+                                        <td style="padding-left: 16px; padding-right: 16px; vertical-align: top;">
                                           <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/benefit1.png" alt="" border="0" width="40" height="40" />
                                         </td>
-                                        <td>
+                                        <td style="padding-right: 16px;">
                                           <b style="font-weight: bold;">Более 30 курсов</b>
                                           <p style="Margin: 0;">Как для новичков, так и для практикующих разработчиков.</p>
                                         </td>
@@ -741,10 +769,10 @@
                                   <td style="padding-bottom: 24px;">
                                     <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                                       <tr>
-                                        <td style="padding-left: 16px; padding-right: 16px;">
+                                        <td style="padding-left: 16px; padding-right: 16px; vertical-align: top;">
                                           <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/benefit2.png" alt="" border="0" width="40" height="40" />
                                         </td>
-                                        <td>
+                                        <td style="padding-right: 16px;">
                                           <b style="font-weight: bold;">Только актуальные знания</b>
                                           <p style="Margin: 0;">Все преподаватели являются практикующими разработчиками, следят за трендами и постоянно обновляют программу курса.</p>
                                         </td>
@@ -756,10 +784,10 @@
                                   <td>
                                     <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                                       <tr>
-                                        <td style="padding-left: 16px; padding-right: 16px;">
+                                        <td style="padding-left: 16px; padding-right: 16px; vertical-align: top;">
                                           <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/benefit3.png" alt="" border="0" width="40" height="40" />
                                         </td>
-                                        <td>
+                                        <td style="padding-right: 16px;">
                                           <b style="font-weight: bold;">База лучших вакансий</b>
                                           <p style="Margin: 0;">Выпускники получают доступ к базе вакансий от ведущих работодателей.</p>
                                         </td>
