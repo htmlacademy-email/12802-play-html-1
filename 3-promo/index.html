@@ -36,11 +36,6 @@
               float: none !important;
             }
 
-            .header__gutter {
-              padding-top: 12px !important;
-              padding-bottom: 12px !important;
-            }
-
           .banner__cell {
             float: none !important;
             width: 100%  !important;
@@ -74,16 +69,8 @@
             padding-bottom: 24px !important;
           }
 
-          .popular-course {
-            Margin-bottom: 48px;
-            Margin-left: auto;
-            Margin-right: auto;
-            float: none !important;
-          }
-
           .popular-courses {
-            padding-top: 48px !important;
-            padding-bottom: 0 !important;
+            padding-top: 0px !important;
           }
 
           .all-courses-link-container {
@@ -108,6 +95,12 @@
             max-width: 100% !important;
           }
         }
+
+        @media only screen and (max-width: 480px) {
+          .header__gutter {
+            text-align: center !important;
+          }
+        }
       </style>
       <!--[if mso]>
         <style>
@@ -115,6 +108,14 @@
             Margin-left: auto;
             Margin-right: auto;
             width: 600px !important;
+          }
+
+          .header__logo {
+            float: left;
+          }
+
+          .header__links {
+            float: right;
           }
 
           .footer-column,
@@ -144,63 +145,73 @@
                     <!-- хедер -->
                     <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
-                        <td class="header" valign="top" style="padding-top: 52px; padding-bottom: 36px; display: flex; flex-direction: row-reverse; justify-content: space-between; flex-wrap: wrap; column-gap: 1em;">
+                        <td class="header" valign="top" style="padding-top: 40px; padding-bottom: 24px; display: flex; flex-direction: row-reverse; justify-content: space-between; flex-wrap: wrap; column-gap: 1em;">
                           <!--[if mso]>
                           <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation" dir="rtl">
                             <tr>
-                              <td dir="ltr">
+                              <td dir="ltr" align="right">
                           <![endif]-->
                                 <!-- ссылки -->
-                                <table class="header__links" align="right" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: right;">
-                                  <tr>
-                                    <td class="header__gutter" style="padding-right: 10px;">
-                                      <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 11px; line-height: 13px; color: #000000;">Мы в соцсетях:</p>
-                                    </td>
-                                    <td class="header__gutter">
-                                      <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                                        <tr>
-                                          <td style="padding-right: 8px;">
-                                            <a href="https://htmlacademy.ru" target="_blank" title="Мы в Facebook">
-                                              <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/facebook.png" alt="Логотип Facebook" width="24" height="24" border="0" />
-                                            </a>
-                                          </td>
-                                          <td style="padding-right: 8px;">
-                                            <a href="https://htmlacademy.ru" target="_blank" title="Мы в Instagram">
-                                              <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/instagram.png" alt="Логотип Instagram" width="24" height="24" border="0" />
-                                            </a>
-                                          </td>
-                                          <td style="padding-right: 8px;">
-                                            <a href="https://htmlacademy.ru" target="_blank" title="Мы в YouTube">
-                                              <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/youtube.png" alt="Логотип YouTube" width="24" height="24" border="0" />
-                                            </a>
-                                          </td>
-                                          <td style="padding-right: 8px;">
-                                            <a href="https://htmlacademy.ru" target="_blank" title="Мы в Telegram">
-                                              <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/telegram.png" alt="Логотип Telegram" width="24" height="24" border="0" />
-                                            </a>
-                                          </td>
-                                          <td>
-                                            <a href="https://htmlacademy.ru" target="_blank" title="Мы во «Вконтакте»">
-                                              <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/vk.png" alt="Логотип «Вконтакте»" width="24" height="24" border="0" />
-                                            </a>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                </table>
+                                <div style="flex: 9999 1 auto;">
+                                  <table class="header__links" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tr>
+                                      <td class="header__gutter" style="padding-top: 12px; padding-bottom: 12px; text-align: right;">
+                                        <table width="auto" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: auto" role="presentation">
+                                          <tr>
+                                            <td style="padding-left: 10px; padding-right: 10px;">
+                                              <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 11px; line-height: 13px; color: #000000;">Мы в соцсетях:</p>
+                                            </td>
+                                            <td>
+                                              <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                <tr>
+                                                  <td style="padding-right: 8px;">
+                                                    <a href="https://htmlacademy.ru" target="_blank" title="Мы в Facebook">
+                                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/facebook.png" alt="Логотип Facebook" width="24" height="24" border="0" />
+                                                    </a>
+                                                  </td>
+                                                  <td style="padding-right: 8px;">
+                                                    <a href="https://htmlacademy.ru" target="_blank" title="Мы в Instagram">
+                                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/instagram.png" alt="Логотип Instagram" width="24" height="24" border="0" />
+                                                    </a>
+                                                  </td>
+                                                  <td style="padding-right: 8px;">
+                                                    <a href="https://htmlacademy.ru" target="_blank" title="Мы в YouTube">
+                                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/youtube.png" alt="Логотип YouTube" width="24" height="24" border="0" />
+                                                    </a>
+                                                  </td>
+                                                  <td style="padding-right: 8px;">
+                                                    <a href="https://htmlacademy.ru" target="_blank" title="Мы в Telegram">
+                                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/telegram.png" alt="Логотип Telegram" width="24" height="24" border="0" />
+                                                    </a>
+                                                  </td>
+                                                  <td>
+                                                    <a href="https://htmlacademy.ru" target="_blank" title="Мы во «Вконтакте»">
+                                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/vk.png" alt="Логотип «Вконтакте»" width="24" height="24" border="0" />
+                                                    </a>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
                           <!--[if mso]>
                               </td>
                               <td dir="ltr">
                           <![endif]-->
                                 <!-- логотип -->
-                                <table class="header__logo" align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float: left;">
-                                  <tr>
-                                    <td class="header__gutter">
-                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/logo.png" alt="Логотип PlayHTML" border="0" width="140" height="24" />
-                                    </td>
-                                  </tr>
-                                </table>
+                                <div style="flex: 1 1 auto; display: flex; justify-content: center;">
+                                  <table class="header__logo" border="0" cellpadding="0" cellspacing="0" role="presentation" width="auto" style="width: auto;">
+                                    <tr>
+                                      <td class="header__gutter" style="padding-top: 12px; padding-bottom: 12px;">
+                                        <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/logo.png" alt="Логотип PlayHTML" border="0" width="140" height="24" />
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </div>
                           <!--[if mso]>
                               </td>
                             </tr>
@@ -242,7 +253,7 @@
                                                 <td>
                                                   <table width="auto" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
                                                     <tr>
-                                                      <td style="padding-right: 11px; font-family: Tahoma, 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 56px; line-height: 68px; font-weight: bold; color: #ffffff;">
+                                                      <td style="padding-right: 11px; font-family: Tahoma, 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 56px; line-height: 68px; font-weight: bold; color: #ffffff; white-space: nowrap;">
                                                         20%
                                                       </td>
                                                       <td style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff;">
@@ -605,7 +616,7 @@
                               </td>
                             </tr>
                             <tr>
-                              <td class="popular-courses" style="padding-top: 24px; padding-bottom: 16px; font-size: 0; text-align: center;">
+                              <td class="popular-courses" style="font-size: 0; text-align: center; padding-top: 24px;">
                                 <!--[if mso]>
                                 <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                                   <tr>
@@ -614,17 +625,17 @@
                                       <!-- Специалист по кибербезопасности -->
                                       <table class="popular-course" width="188" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top; max-width: 188px; width: 100%;">
                                         <tr>
-                                          <td style="padding-bottom: 16px; text-align: center;" align="center">
+                                          <td style="padding-top: 24px; padding-bottom: 16px; text-align: center;" align="center">
                                             <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/shield1.png" alt="" border="0" width="48" height="56" style="Margin: auto; display: block; border: 0;" />
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px;  height: 45px; vertical-align: top; text-align: center;">
+                                          <td style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px; height: 45px; vertical-align: top; text-align: center;">
                                             <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 13px; line-height: 15px; font-weight: bold; color: #141414;">Специалист по кибербезопасности</h3>
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td align="center" style="padding-left: 16px; padding-right: 16px;  text-align: center;">
+                                          <td align="center" style="padding-left: 16px; padding-right: 16px; padding-bottom: 16px; text-align: center;">
                                             <a href="https://htmlacademy.ru/intensive/htmlcss" title="Записаться на курс «Специалист по кибербезопасности»" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: top; text-decoration: none;">
                                               <table width="auto" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; max-width: 100%;" role="presentation">
                                                 <tr>
@@ -644,18 +655,18 @@
                                       <!-- Профессия Data Scientist: анализ данных -->
                                       <table class="popular-course" width="188" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top; max-width: 188px; width: 100%;">
                                         <tr>
-                                          <td style="padding-bottom: 16px; text-align: center;" align="center">
+                                          <td style="padding-bottom: 16px; padding-top: 24px; text-align: center;" align="center">
                                             <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/shield2.png" alt="" border="0" width="48" height="56" style="Margin: auto; display: block; border: 0;" />
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px;  height: 45px; vertical-align: top; text-align: center;">
+                                          <td style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px; height: 45px; vertical-align: top; text-align: center;">
                                             <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 13px; line-height: 15px; font-weight: bold; color: #141414;">Профессия
                                               Data Scientist: анализ данных</h3>
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td align="center" style="padding-left: 16px; padding-right: 16px;  text-align: center;">
+                                          <td align="center" style="padding-left: 16px; padding-right: 16px; padding-bottom: 16px; text-align: center;">
                                             <a href="https://htmlacademy.ru/intensive/htmlcss" title="Записаться на курс «Data Scientist: анализ данных»" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: top; text-decoration: none;">
                                               <table width="auto" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; max-width: 100%;" role="presentation">
                                                 <tr>
@@ -675,17 +686,17 @@
                                       <!-- Профессия Разработчик игр на Unity -->
                                       <table class="popular-course" width="188" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top; max-width: 188px; width: 100%;">
                                         <tr>
-                                          <td style="padding-bottom: 16px; text-align: center;" align="center">
+                                          <td style="padding-bottom: 16px; padding-top: 24px; text-align: center;" align="center">
                                             <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/shield3.png" alt="" border="0" width="48" height="56" style="Margin: auto; display: block; border: 0;" />
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px;  height: 45px; vertical-align: top; text-align: center;">
+                                          <td style="padding-bottom: 16px; padding-left: 16px; padding-right: 16px; height: 45px; vertical-align: top; text-align: center;">
                                             <h3 style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 13px; line-height: 15px; font-weight: bold; color: #141414;">Разработчик игр на Unity с нуля до Middle</h3>
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td align="center" style="padding-left: 16px; padding-right: 16px; text-align: center;">
+                                          <td align="center" style="padding-left: 16px; padding-right: 16px; padding-bottom: 16px; text-align: center;">
                                             <a href="https://htmlacademy.ru/intensive/htmlcss" title="Записаться на курс «Разработчик игр на Unity с нуля до Middle»" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: top; text-decoration: none;">
                                               <table width="auto" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; max-width: 100%;" role="presentation">
                                                 <tr>
