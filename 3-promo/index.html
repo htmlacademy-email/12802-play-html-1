@@ -8,7 +8,7 @@
       <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
       <meta name="x-apple-disable-message-reformatting">
       <title>HTML Academy: PlayHTML. Акция</title>
-      <style>
+      <style type="text/css">
         html,
         body,
         table,
@@ -125,11 +125,10 @@
         }
       </style>
       <!--[if mso]>
-        <style>
+        <style type="text/css">
           .wrapper {
-            Margin-left: auto;
-            Margin-right: auto;
             width: 600px !important;
+            max-width: 100% !important;
           }
 
           .header {
@@ -164,7 +163,12 @@
           </v:background>
         <![endif]-->
 
-        <table class="wrapper" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%; max-width: 600px;" role="presentation">
+        <!--[if mso]>
+        <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 600px; table-layout: fixed" role="presentation">
+          <tr>
+            <td>
+        <![endif]-->
+        <table class="wrapper" width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="Margin-left: auto; Margin-right: auto; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%; max-width: 600px; table-layout: fixed;" role="presentation">
           <tr>
             <td style="padding-left: 16px; padding-right: 16px;">
               <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
@@ -1000,6 +1004,11 @@
             </td>
           </tr>
         </table>
+        <!--[if mso]>
+            </td>
+          </tr>
+        </table>
+        <![endif]-->
       </div>
     </body>
   </html>
