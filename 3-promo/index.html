@@ -27,13 +27,13 @@
 
           .header {
             padding: 12px !important;
-            text-align: center !important;
+            /* text-align: center !important; */
           }
 
-            .header__logo {
+            /* .header__logo {
               Margin-left: 8px !important;
               Margin-right: 8px !important;
-            }
+            } */
 
           .banner__cell {
             float: none !important;
@@ -95,9 +95,32 @@
           }
         }
 
-        @media only screen and (max-width: 480px) {
-          .header__gutter {
-            text-align: center !important;
+        @media only screen and (min-width: 600px) {
+          .header {
+            text-align: left !important;
+          }
+
+          .header__links,
+          .header__logo {
+            display: inline-table;
+            vertical-align: top;
+            width: auto !important;
+          }
+
+          .header__logo {
+            float: left !important;
+            max-width: 140px !important;
+            text-align: left !important;
+          }
+
+          .header__links {
+            float: right !important;
+            max-width: 428px !important;
+            text-align: right !important;
+          }
+
+          .header__links .header__gutter {
+            text-align: right;
           }
         }
       </style>
@@ -109,12 +132,18 @@
             width: 600px !important;
           }
 
+          .header {
+            text-align: left !important;
+          }
+
           .header__logo {
-            float: left;
+            float: left !important;
+            text-align: left !important;
           }
 
           .header__links {
-            float: right;
+            float: right !important;
+            text-align: right !important;
           }
 
           .footer-column,
@@ -144,17 +173,17 @@
                     <!-- хедер -->
                     <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
                       <tr>
-                        <td class="header" valign="top" style="padding-top: 40px; padding-bottom: 24px; text-align: justify; text-align-last: justify; direction: rtl; font-size: 0;" dir="rtl">
+                        <td class="header" valign="top" style="padding-top: 40px; padding-bottom: 24px; text-align: center; direction: rtl; font-size: 0;" dir="rtl">
                           <!--[if mso]>
                           <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation" dir="rtl">
                             <tr>
-                              <td dir="ltr" align="right">
+                              <td dir="ltr" align="right" style="text-align: right;">
                           <![endif]-->
                                 <!-- ссылки -->
-                                <table class="header__links" border="0" cellpadding="0" cellspacing="0" role="presentation" width="auto" dir="ltr" style="display: inline-table; vertical-align: top;">
+                                <table class="header__links" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" dir="ltr">
                                   <tr>
-                                    <td class="header__gutter" style="padding-top: 12px; padding-bottom: 12px; text-align: right;">
-                                      <table width="auto" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: auto" role="presentation">
+                                    <td class="header__gutter" style="padding-top: 12px; padding-bottom: 12px;">
+                                      <table class="social-links" width="auto" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: auto" role="presentation">
                                         <tr>
                                           <td style="padding-left: 10px; padding-right: 10px;">
                                             <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 11px; line-height: 13px; color: #000000;">Мы в соцсетях:</p>
@@ -197,13 +226,13 @@
                                 </table>
                           <!--[if mso]>
                               </td>
-                              <td dir="ltr">
+                              <td dir="ltr" align="left" style="text-align: left;">
                           <![endif]-->
                                 <!-- логотип -->
-                                <table class="header__logo" border="0" cellpadding="0" cellspacing="0" role="presentation" width="auto" dir="ltr" style="display: inline-table; vertical-align: top;">
+                                <table class="header__logo" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" dir="ltr">
                                   <tr>
                                     <td class="header__gutter" style="padding-top: 12px; padding-bottom: 12px;">
-                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/logo.png" alt="Логотип PlayHTML" border="0" width="140" height="24" />
+                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/3-promo/img/logo.png" alt="Логотип PlayHTML" border="0" width="140" height="24" style="display: inline-block; vertical-align: top; border: 0;" />
                                     </td>
                                   </tr>
                                 </table>
@@ -212,7 +241,6 @@
                             </tr>
                           </table>
                           <![endif]-->
-                          <p style="display: inline-block; vertical-align: top; width: 100%;"></p>
                         </td>
                       </tr>
                     </table>
