@@ -13,6 +13,7 @@ function pages() {
       removeAttributeQuotes: false,
       removeRedundantAttributes: false,
       removeOptionalTags: false,
+      minifyCss: false
     }),
     rename(path => {
       path.basename += '.min';
