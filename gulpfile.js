@@ -18,7 +18,19 @@ function pages() {
       removeAttributeQuotes: false,
       removeRedundantAttributes: false,
       removeOptionalTags: false,
-      minifyCss: false
+      minifyCss: {
+        cssDeclarationSorter: false,
+        calc: false,
+        colormin: false,
+        convertValues: false,
+        discardComments: false,
+        mergeIdents: false,
+        mergeLonghand: false,
+        minifyFontValues: false,
+        mergeRules: false,
+        minifySelectors: false,
+        normalizeDisplayValues: false
+      }
     }),
     typograf({
       locale: ['ru', 'en-US']
