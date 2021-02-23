@@ -19,6 +19,11 @@
         mso-line-height-rule: exactly;
       }
 
+      a[href*="x-apple-data-detectors"] {
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
+
       .presenter br {
         display: none;
       }
@@ -44,21 +49,9 @@
           line-height: 19px !important;
         }
 
-        .intro__date,
-        .intro__image {
-          float: none !important;
-          width: 100% !important;
-          max-width: 100% !important;
-        }
-
         .intro__gutter {
           padding-left: 16px !important;
           padding-right: 16px !important;
-        }
-
-        .intro__date-block {
-          padding-top: 0 !important;
-          padding-bottom: 0 !important;
         }
 
         .webinar-plan__gutter {
@@ -109,6 +102,13 @@
             padding-left: 16px !important;
             padding-right: 16px !important;
           }
+      }
+
+      @media only screen and (max-width: 540px) {
+        .intro__date-block {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
       }
     </style>
     <!--[if mso]>
@@ -183,69 +183,73 @@
                       </td>
                     </tr>
                     <tr>
-                      <td class="intro__date-block" style="padding-top: 24px; padding-bottom: 32px; font-size: 0; text-align: center;">
+                      <td class="intro__date-block" style="padding-top: 24px; padding-bottom: 32px; font-size: 0; text-align: center;" valign="top">
                         <!-- текст -->
                         <!--[if mso]>
                         <table width="568" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 568px;" role="presentation">
                           <tr>
                             <td style="width: 216px" valign="top">
                         <![endif]-->
-                              <table class="intro__date" width="216px" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; width: 100%; max-width: 216px;" role="presentation">
-                                <tr>
-                                  <td class="intro__gutter" style="padding-left: 8px; padding-right: 8px;">
-                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
-                                      <tr>
-                                        <td style="text-align: center; background-color: #ff4b33; border-radius: 5px; color: #ffffff;" bgcolor="#ff4b33">
-                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%; height: 286px;" role="presentation">
-                                            <tr>
-                                              <td style="padding-top: 16px;" valign="top" align="center">
-                                                <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 36px; line-height: 42px; font-weight: bold; color: #ffffff;">июнь</p>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td valign="top" align="center">
-                                                <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 96px; line-height: 111px; font-weight: bold; color: #ffffff;">20</p>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td style="padding-top: 2px; padding-bottom: 16px;" valign="top" align="center">
-                                                <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 36px; line-height: 42px; font-weight: bold; color: #ffffff;">17:00</p>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td style="padding-bottom: 24px;" align="center" valign="top">
-                                                <table border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
-                                                  <tr>
-                                                    <td style="border-radius: 5px;" bgcolor="#ffb500">
-                                                      <a href="https://htmlacademy.ru/vebinar/about" title="Перейти на страницу с вебинаром" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: top; padding-top: 8px; padding-bottom: 8px; padding-left: 16px; padding-right: 16px; border-style: solid; border-width: 1px; border-color: #ffb500; font-family: 'Trebushet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #ffb500; border-radius: 5px; text-decoration: none;">
-                                                        На вебинар
-                                                      </a>
-                                                    </td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
+                              <div style="display: inline-block; vertical-align: middle; max-width: 100%; min-width: 38%; width: calc(540000px - 100000%)">
+                                <table class="intro__date" width="216px" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" role="presentation">
+                                  <tr>
+                                    <td class="intro__gutter" style="padding-left: 8px; padding-right: 8px;">
+                                      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
+                                        <tr>
+                                          <td style="text-align: center; background-color: #ff4b33; border-radius: 5px; color: #ffffff;" bgcolor="#ff4b33">
+                                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%; height: 286px;" role="presentation">
+                                              <tr>
+                                                <td style="padding-top: 16px;" valign="top" align="center">
+                                                  <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 36px; line-height: 42px; font-weight: bold; color: #ffffff;">июнь</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td valign="top" align="center">
+                                                  <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 96px; line-height: 111px; font-weight: bold; color: #ffffff;">20</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td style="padding-top: 2px; padding-bottom: 16px;" valign="top" align="center">
+                                                  <p style="Margin: 0; font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 36px; line-height: 42px; font-weight: bold; color: #ffffff;">17:00</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td style="padding-bottom: 24px;" align="center" valign="top">
+                                                  <table border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse;" role="presentation">
+                                                    <tr>
+                                                      <td style="border-radius: 5px;" bgcolor="#ffb500">
+                                                        <a href="https://htmlacademy.ru/vebinar/about" title="Перейти на страницу с вебинаром" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: top; padding-top: 8px; padding-bottom: 8px; padding-left: 16px; padding-right: 16px; border-style: solid; border-width: 1px; border-color: #ffb500; font-family: 'Trebushet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 18px; line-height: 21px; color: #ffffff; background-color: #ffb500; border-radius: 5px; text-decoration: none;">
+                                                          На вебинар
+                                                        </a>
+                                                      </td>
+                                                    </tr>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
                         <!--[if mso]>
                             </td>
                             <td style="width: 352px;">
                         <![endif]-->
                               <!-- картинка -->
-                              <table class="intro__image" width="352" border="0" cellpadding="0" cellspacing="0" style="display: inline-table; width: 100%; max-width: 352px;" role="presentation">
-                                <tr>
-                                  <td class="intro__gutter" align="center">
-                                    <a href="https://htmlacademy.ru" target="_blank" title="Человек с ноутбуком" style="display: block; text-decoration: none;">
-                                      <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/1-invitation/img/intro.png" alt="Человек с ноутбуком" width="352" height="286" border="0" style="display: block; width: 100%; max-width: 352px; height: auto;"/>
-                                    </a>
-                                  </td>
-                                </tr>
-                              </table>
+                              <div style="display: inline-block; vertical-align: middle; max-width: 100%; min-width: 62%; width: calc(540000px - 100000%)">
+                                <table class="intro__image" width="352" border="0" cellpadding="0" cellspacing="0" style="width: 100%;" role="presentation">
+                                  <tr>
+                                    <td class="intro__gutter" align="center">
+                                      <a href="https://htmlacademy.ru" target="_blank" title="Человек с ноутбуком" style="display: block; text-decoration: none;">
+                                        <img src="https://raw.githubusercontent.com/monochromer/12802-play-html-1/master/1-invitation/img/intro.png" alt="Человек с ноутбуком" width="352" height="286" border="0" style="display: block; width: 100%; max-width: 352px; height: auto;"/>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
                         <!--[if mso]>
                             </td>
                           </tr>
