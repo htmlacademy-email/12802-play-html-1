@@ -26,9 +26,26 @@
       .menu__item {
         display: inline-table !important;
         vertical-align: top !important;
-        float: none !important;
-        width: 150px !important;
-        max-width: 150px !important;
+        max-width: 100% !important;
+      }
+
+      .menu__link-wrapper {
+        padding-left:  12px !important;
+        padding-right: 12px !important;
+      }
+
+      @media only screen and (min-width: 600px) {
+        .menu {
+          padding-bottom: 0 !important;
+        }
+
+        .menu__item {
+          min-width: 25%;
+        }
+
+        .menu__link-wrapper {
+          padding-bottom: 26px !important;
+        }
       }
 
       @media only screen and (max-width: 600px) {
@@ -42,27 +59,15 @@
           padding-bottom: 32px !important;
         }
 
-        .menu {
-          padding-bottom: 16px !important;
-        }
+        .menu {}
 
-        .menu__item {
-          width: auto !important;
-          max-width: 100% !important;
-        }
+        .menu__item {}
 
-        .menu__link-wrapper {
-          width: auto !important;
-          max-width: 100% !important;
-          padding-left:  12px !important;
-          padding-right: 12px !important;
-          padding-bottom: 16px !important;
-        }
+        .menu__link-wrapper {}
 
         .menu__link {
           font-size: 18px !important;
           line-height: 21px !important;
-          font-weight: bold !important;
         }
 
         .intro__gutter {
@@ -127,6 +132,10 @@
           max-width: 100% !important;
         }
 
+        .menu__item {
+          width: 100%;
+        }
+
         .footer-column,
         .intro__cell {
           width: 100% !important;
@@ -175,7 +184,7 @@
             <!-- Меню -->
             <table width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
               <tr>
-                <td class="menu" style="font-size: 0; text-align: center;">
+                <td class="menu" style="font-size: 0; text-align: center; padding-bottom: 16px;">
                   <!--[if mso]>
                   <table width="100%" border="0" cellpadding="0" cellspacing="0" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-spacing: 0px; border-collapse: collapse; width: 100%;" role="presentation">
                     <tr>
@@ -184,10 +193,10 @@
                   <!--[if mso]>
                     <td style="width: 150px;">
                   <![endif]-->
-                    <table class="menu__item" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top; max-width: 150px; width: 100%;">
+                    <table class="menu__item" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top;">
                       <tr>
-                        <td class="menu__link-wrapper" align="center" style="width: 150px; padding-bottom: 26px;">
-                          <a class="menu__link" href="https://htmlacademy.ru" title="Курсы" target="_blank" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; font-weight: normal; line-height: 19px; text-transform: uppercase; text-decoration: none; color: #ff4b33;">
+                        <td class="menu__link-wrapper" align="center" style="padding-bottom: 16px;">
+                          <a class="menu__link" href="https://htmlacademy.ru" title="Курсы" target="_blank" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; font-weight: bold; line-height: 19px; text-transform: uppercase; text-decoration: none; color: #ff4b33;">
                             <span style="text-decoration: none; color: #ff4b33;">КУРСЫ</span>
                           </a>
                         </td>
@@ -200,10 +209,10 @@
                   <!--[if mso]>
                     <td style="width: 150px;">
                   <![endif]-->
-                    <table class="menu__item" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top; max-width: 150px; width: 100%;">
+                    <table class="menu__item" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top;">
                       <tr>
-                        <td class="menu__link-wrapper" align="center" style="width: 150px; padding-bottom: 26px;">
-                          <a class="menu__link" href="https://htmlacademy.ru" title="Вебинары" target="_blank" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; font-weight: normal; line-height: 19px; text-transform: uppercase; text-decoration: none; color: #0b379b;">
+                        <td class="menu__link-wrapper" align="center" style="padding-bottom: 16px;">
+                          <a class="menu__link" href="https://htmlacademy.ru" title="Вебинары" target="_blank" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; font-weight: bold; line-height: 19px; text-transform: uppercase; text-decoration: none; color: #0b379b;">
                             <span style="text-decoration: none; color: #0b379b">ВЕБИНАРЫ</span>
                           </a>
                         </td>
@@ -216,10 +225,10 @@
                   <!--[if mso]>
                     <td style="width: 150px;">
                   <![endif]-->
-                    <table class="menu__item" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top; max-width: 150px; width: 100%;">
+                    <table class="menu__item" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top;">
                       <tr>
-                        <td class="menu__link-wrapper" align="center" style="width: 150px; padding-bottom: 26px;">
-                          <a class="menu__link" href="https://htmlacademy.ru" title="О школе" target="_blank" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; font-weight: normal; line-height: 19px; text-transform: uppercase; text-decoration: none; color: #02bad3;">
+                        <td class="menu__link-wrapper" align="center" style="padding-bottom: 16px;">
+                          <a class="menu__link" href="https://htmlacademy.ru" title="О школе" target="_blank" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; font-weight: bold; line-height: 19px; text-transform: uppercase; text-decoration: none; color: #02bad3;">
                             <span style="text-decoration: none; color: #02bad3">О ШКОЛЕ</span>
                           </a>
                         </td>
@@ -232,10 +241,10 @@
                   <!--[if mso]>
                     <td style="width: 150px;">
                   <![endif]-->
-                    <table class="menu__item" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top; max-width: 150px; width: 100%;">
+                    <table class="menu__item" border="0" cellpadding="0" cellspacing="0" role="presentation" style="display: inline-table; vertical-align: top;">
                       <tr>
-                        <td class="menu__link-wrapper" align="center" style="width: 150px; padding-bottom: 26px;">
-                          <a class="menu__link" href="https://htmlacademy.ru" title="Распродажа" target="_blank" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; font-weight: normal; line-height: 19px; text-transform: uppercase; text-decoration: none; color: #ffc81a;">
+                        <td class="menu__link-wrapper" align="center" style="padding-bottom: 16px;">
+                          <a class="menu__link" href="https://htmlacademy.ru" title="Распродажа" target="_blank" style="font-family: 'Trebuchet MS', sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-line-height-rule: exactly; font-size: 16px; font-weight: bold; line-height: 19px; text-transform: uppercase; text-decoration: none; color: #ffc81a;">
                             <span style="text-decoration: none; color: #ffc81a;">РАСПРОДАЖА</span>
                           </a>
                         </td>
