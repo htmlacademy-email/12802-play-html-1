@@ -2,10 +2,14 @@ const stream = require('stream');
 const gulp = require('gulp');
 const htmlnano = require('gulp-htmlnano');
 const rename = require('gulp-rename');
+const inlineCSS = require('gulp-inline-css');
 
 function pages() {
   return stream.pipeline(
     gulp.src(['*/*.html', '!**/*.min.html']),
+    inlineCSS({
+      preserveMediaQueries: true
+    }),
     htmlnano({
       collapseWhitespace: 'conservative',
       removeComments: 'safe',
