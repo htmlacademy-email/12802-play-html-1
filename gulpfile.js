@@ -3,6 +3,7 @@ const gulp = require('gulp');
 const htmlnano = require('gulp-htmlnano');
 const rename = require('gulp-rename');
 const inlineCSS = require('gulp-inline-css');
+const typograf = require('gulp-typograf');
 
 function pages() {
   return stream.pipeline(
@@ -18,6 +19,9 @@ function pages() {
       removeRedundantAttributes: false,
       removeOptionalTags: false,
       minifyCss: false
+    }),
+    typograf({
+      locale: ['ru', 'en-US']
     }),
     rename(path => {
       path.basename += '.min';
